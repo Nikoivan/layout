@@ -1,0 +1,51 @@
+body {
+  background-color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.store {
+  text-align: end;
+  padding: 15px;
+}
+
+.logo {
+  width: 30px;
+}
+
+.card-list {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 10px 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+  min-width: 200px;
+}
+
+.product-title {
+  text-align: center;
+}
+
+.card-footer {
+  margin-top: 150px;
+  color: red;
+  display: flex;
+  justify-content: space-between;
+}
+.add-btn {
+  text-decoration: none;
+  color: inherit;
+  padding: 2px 5px;
+  border: 1px solid red;
+  border-radius: 20px;
+}
