@@ -1,8 +1,6 @@
 import ShopCard from "./ShopCard";
 
-export default function CardsView({ cards }) {
-  const { sortType, products } = cards;
-
+export default function CardsView({ products }) {
   return (
     <ul className="card-list">
       {products.map((el, id) => (

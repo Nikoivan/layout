@@ -4,6 +4,7 @@ import CardsView from "./CardsView";
 import viewList from "./images/view_list_black_24dp.svg";
 import viewModule from "./images/view_module_black_24dp.svg";
 import "./css/store.css";
+import ListView from "./ListView";
 
 export default function Store() {
   const icons = [viewList, viewModule];
@@ -54,7 +55,11 @@ export default function Store() {
           <IconSwitch props={{ icons, icon: state, onSwitch: setState }} />
         </div>
         <div className="store-main">
-          <CardsView cards={{ sortType: icons[state], products }} />
+          {state === 0 ? (
+            <ListView products={products} />
+          ) : (
+            <CardsView products={products} />
+          )}
         </div>
       </div>
     </div>

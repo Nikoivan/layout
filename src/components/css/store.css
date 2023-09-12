@@ -41,11 +41,43 @@ body {
   color: red;
   display: flex;
   justify-content: space-between;
+  font-weight: 500;
 }
 .add-btn {
   text-decoration: none;
+  text-transform: uppercase;
   color: inherit;
-  padding: 2px 5px;
+  padding: 2px 7px;
+  border: 1px solid red;
+  border-radius: 20px;
+}
+
+.shop-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f5f5f5;
+  margin-top: 5px;
+  padding: 0 5px;
+}
+
+.item-img {
+  height: 80px;
+}
+
+.product-item-color {
+  font-size: 12px;
+}
+
+.product-item-price,
+.product-item-btn {
+  color: red;
+  font-weight: 500;
+}
+
+.product-item-btn {
+  text-transform: uppercase;
+  padding: 3px 7px;
   border: 1px solid red;
   border-radius: 20px;
 }
